@@ -420,7 +420,7 @@ bool VideoStore::setup_resampler() {
     return false;
   }
 
-  audio_output_codec = avcodec_find_encoder(AV_CODEC_ID_AAC);
+  audio_output_codec = avcodec_find_encoder_by_name("libfdk_aac");
   if ( ! audio_output_codec ) {
     Error("Could not find codec for AAC");
     return false;
