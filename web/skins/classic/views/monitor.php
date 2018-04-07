@@ -507,23 +507,15 @@ if ( isset ($_REQUEST['dupId']))
 }
 ?>
 
-      <div id="headerButtons">
-        <a href="#" onclick="createPopup( '?view=monitorprobe&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );"><?php echo translate('Probe') ?></a>
-  <?php
-  if ( ZM_HAS_ONVIF )
-  {
-  ?>
-          <a href="#" onclick="createPopup( '?view=onvifprobe&amp;mid=<?php echo $monitor['Id'] ?>', 'zmOnvifProbe<?php echo $monitor['Id'] ?>', 'onvifprobe' ); return( false );"><?php echo  translate('OnvifProbe') ?></a>
-  <?php
-  }
-  ?>
-        <a href="#" onclick="createPopup( '?view=monitorpreset&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorPreset<?php echo $monitor['Id'] ?>', 'monitorpreset' ); return( false );"><?php echo translate('Presets') ?></a>
-      </div>
+<div id="headerButtons">
+	<a href="#" onclick="createPopup( '?view=importmonitor&amp;mid=<?php echo $monitor->Id()?>', 'zmImportMonitor<?php echo $monitor->Id()?>', 'monitorprobe' ); return( false );"><?php echo  translate('Import Monitor') ?></a>
+	<a href="#" onclick="createPopup( '?view=testmonitor&amp;mid=<?php echo $monitor->Id()?>', 'zmBackupMonitor<?php echo $monitor->Id()?>', 'monitorprobe' ); return( false );"><?php echo  translate('Backup Monitor') ?></a>
+</div>
 <?php
 }
 ?>
       <h2><?php echo translate('Monitor') ?> - <?php echo validHtmlStr($monitor['Name']) ?><?php if ( !empty($monitor['Id']) ) { ?> (<?php echo $monitor['Id'] ?>)<?php } ?></h2>
-    </div>
+</div>
     <div id="content">
       <ul class="tabList">
 <?php
