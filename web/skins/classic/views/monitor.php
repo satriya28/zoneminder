@@ -508,8 +508,8 @@ if ( isset ($_REQUEST['dupId']))
 ?>
 
 <div id="headerButtons">
-	<a href="#" onclick="createPopup( '?view=importmonitor&amp;mid=<?php echo $monitor->Id()?>', 'zmImportMonitor<?php echo $monitor->Id()?>', 'monitorprobe' ); return( false );"><?php echo  translate('Import Monitor') ?></a>
-	<a href="#" onclick="createPopup( '?view=testmonitor&amp;mid=<?php echo $monitor->Id()?>', 'zmBackupMonitor<?php echo $monitor->Id()?>', 'monitorprobe' ); return( false );"><?php echo  translate('Backup Monitor') ?></a>
+	<a href="#" onclick="createPopup( '?view=testmonitor&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );"><?php echo translate('Backup') ?></a>
+	<a href="#" onclick="createPopup( '?view=importmonitor&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );"><?php echo translate('Import') ?></a>
 </div>
 <?php
 }
