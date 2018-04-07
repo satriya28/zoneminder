@@ -133,6 +133,8 @@ if($tab == 'skins') {
 			</tbody>
 		</table>
         <div id="contentButtons">
+  	  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testconfig&amp;uid=0' ); return( false );"<?php echo translate('Backup Config') ?>/>
+	  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importconfig&amp;uid=0'); return( false );"<?php echo translate('Import Config') ?>/>
           <input type="submit" value="<?php echo translate('Save') ?>"<?php echo $canEdit?'':' disabled="disabled"' ?>/>
 		  <input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
         </div>
@@ -205,7 +207,9 @@ elseif ( $tab == "users" )
           </tbody>
         </table>
         <div id="contentButtons">
-          <input type="button" value="<?php echo translate('AddNewUser') ?>" onclick="createPopup( '?view=user&amp;uid=0', 'zmUser', 'user' );"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/><input type="submit" name="deleteBtn" value="<?php echo translate('Delete') ?>" disabled="disabled"/><input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
+	  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testuser&amp;uid=0');"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/>
+	  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importuser&amp;mid=0');"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/>
+	  <input type="button" value="<?php echo translate('AddNewUser') ?>" onclick="createPopup( '?view=user&amp;uid=0', 'zmUser', 'user' );"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/><input type="submit" name="deleteBtn" value="<?php echo translate('Delete') ?>" disabled="disabled"/><input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
         </div>
       </form>
 <?php
