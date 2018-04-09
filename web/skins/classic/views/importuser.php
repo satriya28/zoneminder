@@ -84,7 +84,7 @@ if(isset($_POST["import"]))
     <input type="file" name="database" style="width: 370px" /></p>
     <div id="contentButtons">
     <input type="submit" name="import" value="Import" />
-    <input type="button" value="Cancel" onclick="closeWindow()" />
+    <input type="button" value="Close" onclick="closeWindow()" />
     </div>
   </form>
   </div>
