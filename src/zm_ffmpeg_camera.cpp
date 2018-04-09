@@ -593,7 +593,7 @@ int FfmpegCamera::CaptureAndRecord( Image &image, bool recording, char* event_fi
           if (record_audio) {
             if (mAudioStreamId == -1) {
               Debug(3, "Record Audio on but no audio stream found");
-              videoStore = new VideoStore((const char *) event_file, "mp4",
+              videoStore = new VideoStore((const char *) event_file, "mkv",
                                           mFormatContext->streams[mVideoStreamId],
                                           NULL,
                                           startTime,
@@ -601,7 +601,7 @@ int FfmpegCamera::CaptureAndRecord( Image &image, bool recording, char* event_fi
 
             } else {
               Debug(3, "Video module initiated with audio stream");
-              videoStore = new VideoStore((const char *) event_file, "mp4",
+              videoStore = new VideoStore((const char *) event_file, "mkv",
                                           mFormatContext->streams[mVideoStreamId],
                                           mFormatContext->streams[mAudioStreamId],
                                           startTime,
@@ -609,7 +609,7 @@ int FfmpegCamera::CaptureAndRecord( Image &image, bool recording, char* event_fi
             }
           } else {
             Debug(3, "Record_audio is false so exclude audio stream");
-            videoStore = new VideoStore((const char *) event_file, "mp4",
+            videoStore = new VideoStore((const char *) event_file, "mkv",
                                         mFormatContext->streams[mVideoStreamId],
                                         NULL,
                                         startTime,
@@ -641,14 +641,14 @@ int FfmpegCamera::CaptureAndRecord( Image &image, bool recording, char* event_fi
           if (record_audio) {
             if (mAudioStreamId == -1) {
               Debug(3, "Record Audio on but no audio stream found");
-              videoStore = new VideoStore((const char *) event_file, "mp4",
+              videoStore = new VideoStore((const char *) event_file, "mkv",
                                           mFormatContext->streams[mVideoStreamId],
                                           NULL,
                                           startTime,
                                           this->getMonitor()->getOrientation());
             } else {
               Debug(3, "Video module initiated with audio stream");
-              videoStore = new VideoStore((const char *) event_file, "mp4",
+              videoStore = new VideoStore((const char *) event_file, "mkv",
                                           mFormatContext->streams[mVideoStreamId],
                                           mFormatContext->streams[mAudioStreamId],
                                           startTime,
@@ -656,7 +656,7 @@ int FfmpegCamera::CaptureAndRecord( Image &image, bool recording, char* event_fi
             }
           } else {
             Debug(3, "Record_audio is false so exclude audio stream");
-            videoStore = new VideoStore((const char *) event_file, "mp4",
+            videoStore = new VideoStore((const char *) event_file, "mkv",
                                         mFormatContext->streams[mVideoStreamId],
                                         NULL, startTime,
                                         this->getMonitor()->getOrientation());
