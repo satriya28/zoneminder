@@ -1,4 +1,4 @@
-ZoneMinder H264 Patch
+ZoneMinder H264 Patch (No Audio)
 
 [![Build Status](https://travis-ci.org/ZoneMinder/ZoneMinder.png?branch=feature-h264-videostorage)](https://travis-ci.org/ZoneMinder/ZoneMinder)  [![Bountysource](https://api.bountysource.com/badge/team?team_id=204&style=bounties_received)](https://www.bountysource.com/teams/zoneminder/issues?utm_source=ZoneMinder&utm_medium=shield&utm_campaign=bounties_received)
 
