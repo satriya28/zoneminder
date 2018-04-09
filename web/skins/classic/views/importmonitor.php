@@ -64,10 +64,7 @@ if(isset($_POST["import"]))
   <script type="text/javascript" src="tools/mootools/mootools-core.js"></script>
   <script type="text/javascript" src="tools/mootools/mootools-more.js"></script>
   <script type="text/javascript" src="js/mootools.ext.js"></script>
-  <script type="text/javascript" src="skins/classic/js/jquery-ui.js"></script>
   <script type="text/javascript" src="skins/classic/js/jquery.js"></script>
-  <script type="text/javascript" src="skins/classic/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/logger.js"></script>
   <script type="text/javascript" src="js/overlay.js"></script>
   <script type="text/javascript" src="skins/classic/js/classic.js"></script>
   <script type="text/javascript" src="skins/classic/js/skin.js"></script>
