@@ -29,8 +29,8 @@
                 <br />
                 <form method="post" action="skins/classic/views/exportmonitor.php" align="center">
                     <div id="contentButtons">
-                        <input type="submit" name="export" value="Export" />
-                        <input type="button" value="Cancel" onclick="closeWindow()" />
+                        <input type="submit" name="Export" value="Export" />
+                        <input type="button" value="Close" onclick="closeWindow()" />
                     </div>
                 </form>
       </body>
