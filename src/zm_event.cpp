@@ -178,7 +178,7 @@ Event::Event( Monitor *p_monitor, struct timeval p_start_time, const std::string
 
   if ( monitor->GetOptVideoWriter() != 0 ) {
     int nRet; 
-    snprintf( video_name, sizeof(video_name), "%d-%s", id, "video.mp4" );
+    snprintf( video_name, sizeof(video_name), "%d-%s", id, "video.mkv" );
     snprintf( video_file, sizeof(video_file), video_file_format, path, video_name );
     snprintf( timecodes_name, sizeof(timecodes_name), "%d-%s", id, "video.timecodes" );
     snprintf( timecodes_file, sizeof(timecodes_file), video_file_format, path, timecodes_name );
