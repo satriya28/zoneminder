@@ -1,3 +1,6 @@
+<?php
+xhtmlHeaders(__FILE__, translate('ExportMonitor') );
+?>
 <!DOCTYPE html>
  <html>
       <head>
