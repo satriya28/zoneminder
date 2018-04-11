@@ -1,3 +1,6 @@
+<?php
+xhtmlHeaders(__FILE__, translate('ExportConfig') );
+?>
 <!DOCTYPE html>
  <html>
       <head>
