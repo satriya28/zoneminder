@@ -48,6 +48,7 @@ if(isset($_POST["import"]))
   $message = '<label class="text-danger">Please Select Monitor File</label>';
  }
 }
+xhtmlHeaders(__FILE__, translate('ImportMonitor') );
 ?>
 
 <!DOCTYPE html>
