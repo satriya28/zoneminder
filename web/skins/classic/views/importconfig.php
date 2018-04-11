@@ -48,7 +48,7 @@ if(isset($_POST["import"]))
   $message = '<label class="text-danger">Please Select Config File</label>';
  }
 }
-xhtmlHeaders(__FILE__, translate('ImportUser') );
+xhtmlHeaders(__FILE__, translate('ImportConfig') );
 ?>
 
 <!DOCTYPE html>
