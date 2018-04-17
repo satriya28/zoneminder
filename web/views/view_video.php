@@ -15,7 +15,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
 
 // Calling sequence:   ... /zm/index.php?view=video&event_id=123
@@ -38,7 +38,7 @@ $path = '';
 if ( ! empty($_REQUEST['eid'] ) ) {
   $Event = new Event( $_REQUEST['eid'] );
   $path = $Event->Path().'/'.$Event->DefaultVideo();
-	Debug("Path: $path");
+	Logger::Debug("Path: $path");
 } else {
   $errorText = "No video path";
 }
@@ -62,14 +62,14 @@ $end = $size-1;
 $length = $size;
 
 if ( isset( $_SERVER['HTTP_RANGE'] ) ) {
-  Debug("Using Range " . $_SERVER['HTTP_RANGE'] );
+  Logger::Debug("Using Range " . $_SERVER['HTTP_RANGE'] );
   if ( preg_match( '/bytes=\h*(\d+)-(\d*)[\D.*]?/i', $_SERVER['HTTP_RANGE'], $matches) ) {
     $begin = intval( $matches[1] );
     if ( ! empty( $matches[2]) ) {
       $end = intval( $matches[2] );
     }
     $length = $end - $begin + 1;
-    Debug("Using Range $begin $end size: $size, length: $length");
+    Logger::Debug("Using Range $begin $end size: $size, length: $length");
   }
 } # end if HTTP_RANGE
 

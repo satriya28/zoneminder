@@ -31,7 +31,6 @@ $tabs['skins'] = translate('Display');
 $tabs['system'] = translate('System');
 $tabs['config'] = translate('Config');
 $tabs['servers'] = translate('Servers');
-$tabs['paths'] = translate('Paths');
 $tabs['web'] = translate('Web');
 $tabs['images'] = translate('Images');
 $tabs['logging'] = translate('Logging');
@@ -133,8 +132,8 @@ if($tab == 'skins') {
 			</tbody>
 		</table>
         <div id="contentButtons">
-	  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testconfig&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
-	  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importconfig&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
+		  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testconfig&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
+		  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importconfig&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
           <input type="submit" value="<?php echo translate('Save') ?>"<?php echo $canEdit?'':' disabled="disabled"' ?>/>
 		  <input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
         </div>
@@ -207,9 +206,9 @@ elseif ( $tab == "users" )
           </tbody>
         </table>
         <div id="contentButtons">
-	  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testuser&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
-	  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importuser&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
-	  <input type="button" value="<?php echo translate('AddNewUser') ?>" onclick="createPopup( '?view=user&amp;uid=0', 'zmUser', 'user' );"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/><input type="submit" name="deleteBtn" value="<?php echo translate('Delete') ?>" disabled="disabled"/><input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
+		  <input type="button" value="<?php echo translate('Backup') ?>" onclick="createPopup( '?view=testuser&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
+		  <input type="button" value="<?php echo translate('Import') ?>" onclick="createPopup( '?view=importuser&amp;mid=<?php echo $monitor['Id'] ?>', 'zmMonitorProbe<?php echo $monitor['Id'] ?>', 'monitorprobe' ); return( false );">
+          <input type="button" value="<?php echo translate('AddNewUser') ?>" onclick="createPopup( '?view=user&amp;uid=0', 'zmUser', 'user' );"<?php if ( !canEdit( 'System' ) ) { ?> disabled="disabled"<?php } ?>/><input type="submit" name="deleteBtn" value="<?php echo translate('Delete') ?>" disabled="disabled"/><input type="button" value="<?php echo translate('Cancel') ?>" onclick="closeWindow();"/>
         </div>
       </form>
 <?php
