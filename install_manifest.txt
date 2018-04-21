@@ -1,4 +1,4 @@
-/etc/zm.conf
+/etc/zm.conf.new
 /usr/local/share/man/man8/zoneminder-zma.8.gz
 /usr/local/share/man/man8/zoneminder-zmc.8.gz
 /usr/local/share/man/man8/zoneminder-zmu.8.gz

@@ -1,5 +1,5 @@
 <?php
-xhtmlHeaders(__FILE__, translate('ExportMonitor') );
+xhtmlHeaders(__FILE__, translate('TestMonitor') );
 ?>
 <!DOCTYPE html>
  <html>
@@ -16,6 +16,7 @@ xhtmlHeaders(__FILE__, translate('ExportMonitor') );
   <script type="text/javascript" src="tools/mootools/mootools-more.js"></script>
   <script type="text/javascript" src="js/mootools.ext.js"></script>
   <script type="text/javascript" src="skins/classic/js/jquery.js"></script>
+  <script type="text/javascript" src="js/logger.js"></script>
   <script type="text/javascript" src="js/overlay.js"></script>
   <script type="text/javascript" src="skins/classic/js/classic.js"></script>
   <script type="text/javascript" src="skins/classic/js/skin.js"></script>
@@ -29,7 +30,7 @@ xhtmlHeaders(__FILE__, translate('ExportMonitor') );
                 <br />
                 <form method="post" action="skins/classic/views/exportmonitor.php" align="center">
                     <div id="contentButtons">
-                        <input type="submit" name="Export" value="Export" />
+                        <input type="submit" name="export" value="Export" />
                         <input type="button" value="Close" onclick="closeWindow()" />
                     </div>
                 </form>

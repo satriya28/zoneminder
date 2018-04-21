@@ -48,9 +48,10 @@ if(isset($_POST["import"]))
   $message = '<label class="text-danger">Please Select Config File</label>';
  }
 }
+?>
+<?php
 xhtmlHeaders(__FILE__, translate('ImportConfig') );
 ?>
-
 <!DOCTYPE html>
 <html>
  <head>
@@ -66,6 +67,7 @@ xhtmlHeaders(__FILE__, translate('ImportConfig') );
   <script type="text/javascript" src="tools/mootools/mootools-more.js"></script>
   <script type="text/javascript" src="js/mootools.ext.js"></script>
   <script type="text/javascript" src="skins/classic/js/jquery.js"></script>
+  <script type="text/javascript" src="js/logger.js"></script>
   <script type="text/javascript" src="js/overlay.js"></script>
   <script type="text/javascript" src="skins/classic/js/classic.js"></script>
   <script type="text/javascript" src="skins/classic/js/skin.js"></script>
