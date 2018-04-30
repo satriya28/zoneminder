@@ -132,7 +132,6 @@ if ( canEdit( 'Events' ) ) {
 ?>
         <div id="framesEvent"><a href="#" onclick="showEventFrames()"><?php echo translate('Frames') ?></a></div>
         <div id="streamEvent" class="hidden"><a href="#" onclick="showStream()"><?php echo translate('Stream') ?></a></div>
-        <div id="stillsEvent"><a href="#" onclick="showStills()"><?php echo translate('Stills') ?></a></div>
 <?php
   if ( $Event->DefaultVideo() ) { 
 ?>
@@ -144,7 +143,6 @@ if ( canEdit( 'Events' ) ) {
 <?php
   } // end if Event->DefaultVideo
 ?>
-        <div id="exportEvent"><a href="#" onclick="exportEvent();"><?php echo translate('Export') ?></a></div>
       </div>
       <div id="eventVideo" class="">
 <?php
